@@ -264,7 +264,7 @@ class PositionProvider extends React.Component {
       e.nativeEvent.stopImmediatePropagation();
     };
 
-    const style = { position: 'absolute' };
+    const style = { position: 'absolute', zIndex: 100 };
 
     if (nextStyle.nextPosition) {
       nextOptions = Object.assign({}, options, { position: nextStyle.nextPosition });
